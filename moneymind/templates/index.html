@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->
+        <title>MoneyMind: Análisis Financiero Automatizado y Seguimiento de Hábitos de Consumo</title>
+        <!-- SEO Meta description -->
+        <meta name="description" 
+            content="MoneyMind es una plataforma automatizada que ofrece análisis financiero en tiempo real y seguimiento de hábitos de consumo personal, diseñada para optimizar las decisiones de ahorro y gasto.">
+        <meta name="keywords" content="MoneyMind, análisis financiero, seguimiento de consumo, software automatizado, ahorro, planificación financiera">
+        <meta name="author" content="Adalberto González Cuesta">
+        <!-- OG Meta tags -->
+        <meta property="og:title" content="MoneyMind: Análisis Financiero Automatizado y Seguimiento de Hábitos de Consumo">
+        <meta property="og:description" 
+            content="MoneyMind es una plataforma automatizada que ofrece análisis financiero en tiempo real y seguimiento de hábitos de consumo personal, diseñada para optimizar las decisiones de ahorro y gasto.">
+        <meta property="og:image" content="https://moneymind.com/logo.png">
+        <meta property="og:url" content="https://moneymind.com">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="MoneyMind">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="{% static 'images/logos/MoneyMind-logo-180x180.png' %}" sizes="180x180">
+        <link rel="icon" type="image/png" href="{% static 'images/logos/MoneyMind-logo-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'images/logos/MoneyMind-logo-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'images/logos/site.webmanifest' %}">
+        <link rel="mask-icon" href="{% static 'images/logos/MoneyMind-logo.svg' %}">
+        <link rel="shortcut icon" href="{% static 'images/logos/MoneyMind-logo.ico' %}">
+        <!--Styles-->
+        {% include 'includes/layouts/stylesheets.html' %}
+    </head>
+    <body>
+        <!-- ======== preloader start ======== -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="spinner">
+                    <div class="spinner-container">
+                        <div class="spinner-rotator">
+                            <div class="spinner-left">
+                                <div class="spinner-circle"></div>
+                            </div>
+                            <div class="spinner-right">
+                                <div class="spinner-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+        <!-- Main start-->
+        <main class="main">
+            <!-- Header start -->
+            {% include 'includes/components/menu/header.html' %}
+            <!-- Header end -->
+
+            <!-- Hero start -->
+            {% include 'includes/components/hero/hero.html' %}
+            <!-- Hero end -->
+
+            <!-- Feature start -->
+            {% include 'includes/components/feature/feature.html' %}
+            <!-- Feature end -->
+
+            <!-- About start -->
+            {% include 'includes/components/about/about.html' %}
+            <!-- About end -->
+
+            <!-- Service start -->
+            {% include 'includes/components/service/service.html' %}
+            <!-- Service end -->
+
+            <!-- Why start -->
+            {% include 'includes/components/why/why.html' %}
+            <!-- Why end -->
+
+            <!-- Footer start -->
+            {% include 'includes/components/footer/footer.html' %}
+            <!-- Footer end -->
+        </main>
+        <!-- Main end-->
+
+        <!--Scripts-->
+        {% include 'includes/layouts/scripts.html' %}
+    </body>
+</html>
