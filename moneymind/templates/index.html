@@ -32,25 +32,27 @@
     </head>
     <body>
         <!-- ======== preloader start ======== -->
-        <div class="preloader">
-            <div class="loader">
-                <div class="spinner">
-                    <div class="spinner-container">
-                        <div class="spinner-rotator">
-                            <div class="spinner-left">
-                                <div class="spinner-circle"></div>
-                            </div>
-                            <div class="spinner-right">
-                                <div class="spinner-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="loader-image">
+                <img src="{% static 'images/logos/MoneyMind.svg' %}" alt="MoneyMind Logo" width="64" height="64"/>
             </div>
         </div>
         <!-- preloader end -->
         <!-- Main start-->
-        <main class="main">
+        <main class="main hidden">
             <!-- Header start -->
             {% include 'includes/components/menu/header.html' %}
             <!-- Header end -->
